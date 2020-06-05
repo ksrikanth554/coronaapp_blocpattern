@@ -1,5 +1,6 @@
+import 'package:coronaapp/data/models/corona_country.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:meta/meta.dart';
 
 abstract class CoronaCountriesEvent extends Equatable{}
 
@@ -14,4 +15,19 @@ class CoronaUpdateOfACountry extends CoronaCountriesEvent{
   @override
   // TODO: implement props
   List<Object> get props => null;
+}
+class FilteredCountriesEvent extends CoronaCountriesEvent{
+  final String text;
+  final List<CoronaCountry> countries;
+  FilteredCountriesEvent({@required this.countries,@required this.text});
+  @override
+  // TODO: implement props
+  List<Object> get props => null;
+
+}
+class CrossBtnPressedEvent extends CoronaCountriesEvent{
+  @override
+  // TODO: implement props
+  List<Object> get props => null;
+
 }

@@ -30,4 +30,16 @@ class CorornaDataSource{
     }
   }
 
+  List<CoronaCountry> getFilteredCounries(String text,List<CoronaCountry> countries){
+    if (countries.length>0) {
+      List<CoronaCountry> filteredList=countries.where((country)=>country.country.toLowerCase()
+                                       .contains(text.trim().toLowerCase())).toList();
+      return filteredList;    
+    }
+    else{
+      return [];
+    }
+
+  }
+
 }

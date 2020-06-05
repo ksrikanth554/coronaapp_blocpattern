@@ -1,6 +1,6 @@
 import 'package:coronaapp/data/models/corona_country.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:meta/meta.dart';
 
 abstract class CoronaCountriesState extends Equatable{}
 
@@ -22,4 +22,19 @@ class CoronaCountriesLoadingFailedState extends CoronaCountriesState{
   @override
   // TODO: implement props
   List<Object> get props => null;
+}
+
+class FilteredCountriesState extends CoronaCountriesState{
+  final List<CoronaCountry> countries;
+  FilteredCountriesState({@required this.countries});
+  @override
+  // TODO: implement props
+  List<Object> get props => null;
+
+}
+class NoCountriesFoundState extends CoronaCountriesState{
+  @override
+  // TODO: implement props
+  List<Object> get props => null;
+
 }

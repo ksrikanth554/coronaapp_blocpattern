@@ -7,8 +7,8 @@ class Helper{
   }
   static String millisecondsToDate(int timestamp){
     var date=DateTime.fromMillisecondsSinceEpoch(timestamp);
-    var now=DateTime.now();
-    String formattedDate=DateFormat('dd-MM-yyyy').format(now);
+   // var now=DateTime.now();
+    String formattedDate=DateFormat('dd-MM-yyyy').format(date);
     return formattedDate;
   }
 }

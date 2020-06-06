@@ -1,4 +1,6 @@
 import 'package:coronaapp/res/colors/app_colors.dart';
+import 'package:coronaapp/ui/pages/corona_countries_page.dart';
+import 'package:coronaapp/ui/pages/corona_summary_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -42,8 +44,8 @@ class _HomePageState extends State<HomePage> {
         body: IndexedStack(
           index: current_tab,
           children: <Widget>[
-            Center(child:Text('Summary')),
-            Center(child:Text('countries'))
+            CoronaSummaryPage(),
+            CoronaCountriesPage()
           ],
         ),
       ),

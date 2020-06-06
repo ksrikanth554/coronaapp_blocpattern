@@ -30,7 +30,7 @@ class _CoronaSummaryPageState extends State<CoronaSummaryPage> {
       body: SingleChildScrollView(
         child: Container(
           height: screenHeight,
-          color:Colors.grey[800],
+          color:AppColors.darkBg,
           child: BlocBuilder<CoronaSummaryBloc,CoronaSummaryState>(builder: (context,state){
             Widget widget;
               if (state is CoronaSummaryInitialState) {

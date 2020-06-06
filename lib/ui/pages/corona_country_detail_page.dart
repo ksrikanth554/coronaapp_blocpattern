@@ -157,6 +157,30 @@ class CoronaCountryDeatilsPage extends StatelessWidget {
              Container(
                padding: EdgeInsets.only(top:15,),
                alignment: Alignment.center,
+               child: Text('${country.active}',
+               style: TextStyle(
+                  color: Colors.orange,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  
+               ),
+              ),
+             ),
+             Container(
+               padding: EdgeInsets.only(bottom: 15),
+               alignment: Alignment.center,
+               child: Text('ACTIVE',
+               style: TextStyle(
+                  color: Colors.orange,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  letterSpacing: 1.0
+               ),
+              ),
+             ),
+             Container(
+               padding: EdgeInsets.only(top:15,),
+               alignment: Alignment.center,
                child: Text('${country.critical}',
                style: TextStyle(
                   color: Colors.pinkAccent,

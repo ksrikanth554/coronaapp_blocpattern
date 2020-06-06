@@ -166,6 +166,34 @@ class _CoronaSummaryPageState extends State<CoronaSummaryPage> {
             ),
           
         ),
+        Container(
+          padding: EdgeInsets.only(top:screenHeight*0.02),
+          alignment: Alignment.center,
+            child: Text(state.coronaSummary.active.toString(),
+            style:TextStyle(
+              fontFamily:'RussoOne',
+              fontWeight:FontWeight.bold,
+              fontSize: 25,
+              color:Colors.pinkAccent,
+              letterSpacing: 2.3
+              ),
+            ),
+          
+        ),
+        Container(
+          padding: EdgeInsets.only(top:screenHeight*0.01,bottom:screenHeight*0.02),
+          alignment: Alignment.center,
+            child: Text('ACTIVE',
+            style:TextStyle(
+              fontFamily:'RussoOne',
+              fontWeight:FontWeight.bold,
+              fontSize: 22,
+              color:Colors.pinkAccent,
+              letterSpacing: 2.3
+              ),
+            ),
+          
+        ),
        // Center(child: Text(state.coronaSummary.cases.toString(),style: TextStyle(color: Colors.white),))
       ],
     );
